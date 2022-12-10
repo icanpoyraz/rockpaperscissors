@@ -87,7 +87,7 @@ if st.button('Run simulation'):
   bar = st.progress(0)
   latest_iteration = st.empty()
   for games in range(games_played + 1):
-    latest_iteration.text(f'{int((games/games_played)*100)} % completed...')
+    latest_iteration.text(f'{int((games/games_played)*100)}% completed...')
     bar.progress(games/games_played)
     time.sleep(0.1)
     if games == games_played:
@@ -105,9 +105,6 @@ if st.button('Run simulation'):
   st.subheader('Simulation results')
   st.write('Number of games played: ' + str(games))
   st.write('Player 1 strategy: ' + str(strategy))
-  st.success('Player 1 wins: ' + str(player_1_win))
-  st.success('Player 1 wins percentage: ' + str((player_1_win/games)*100) + '%')
-  st.error('Player 2 wins: ' + str(player_2_win))
-  st.error('Player 2 wins percentage: ' + str((player_2_win/games)*100) + '%')
-  st.warning('Draws: ' + str(draw))
-  st.warning('Draws percentage: ' + str((draw/games)*100) + '%')
+  st.success('Player 1 wins: ' + str(player_1_win) + ' (percentage: ' + str((player_1_win/games)*100) + '%)')
+  st.error('Player 2 wins: ' + str(player_2_win) + ' (percentage: ' + str((player_2_win/games)*100) + '%)')
+  st.warning('Draws: ' + str(draw) + ' (percentage: ' + str((draw/games)*100) + '%)')
