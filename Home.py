@@ -4,7 +4,7 @@ st.title("Rock, Paper, Scissors")
 st.write('by Ihsancan Ozpoyraz - 2022')
 
 st.write('This mini-game was programmed to illustrate the concept of decision-making under uncertainty for the blog post titled "Rock, Paper and Scissors: Which one to go with?"')
-st.write('Here is the link for the blog post: [link here]')
+st.write('Here is the link for the blog post: https://www.linkedin.com/pulse/rock-paper-scissors-which-one-go-ihsancan-ozpoyraz/?published=t&trackingId=IW28MNZFQcav9xttIKsjfQ%3D%3D')
 
 st.write('In the single-play mode, the game allows you (Player 1) to get estimates about the possible move of your opponent (Player 2) in the next round before the round starts. In this way, you can pick the winning move and hope to come out on top. The estimates are generated randomly however, an estimation accuracy that should be set by you at the beginning of the game is taken into account (the aim is to mimic an imperfect AI-powered predictive model). You can vary this percentage between 0% and 100% (the default setting is 70%). Eventually, the estimate could or not be correct on a single instance (unless you set the estimation accuracy to 100%) and relying on the estimate provided could let you either win or lose on the round. You can try it yourself; select "Single Play" on the menu left-hand side, and follow the instructions to play.')
          
